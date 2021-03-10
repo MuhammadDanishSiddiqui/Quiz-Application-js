@@ -1,0 +1,129 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-image: url(../quiz.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%
+}
+
+#quiz_header{
+    background-color: white;
+    padding:10px;
+    width:70%
+}
+
+#progress{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 10px
+}
+
+
+#qusetions h3{
+    margin-bottom: 20px
+}
+
+.nextbtn{
+    width: 100%;
+    padding:10px 0;
+    border-radius: 10px;
+    outline: none;
+    border:none;
+    background-color: blue;
+    color:white;
+    font-size: 20px;
+    margin: 10px 0;
+    cursor: pointer;
+
+}
+
+.nextbtn:hover{
+    background-color: green
+}
+
+.timer p{
+    font-weight: 600;
+    font-size: 20px
+}
+
+input,label{
+    cursor: pointer;
+}
+
+label{
+    font-size: 20px;
+    margin-left: 10px
+}
+
+@media screen and (max-width: 992px){
+    #quiz_header h2{
+        font-size: 20px
+    }
+label{
+    font-size: 15px
+}
+
+#qusetions h3{
+    font-size: 17px
+}
+
+.timer p{
+    font-size:17px
+}
+}
+
+
+@media screen and (max-width: 768px){
+    #progress{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center
+    }
+    .timer{
+      margin-top: 10px
+    }
+}
+
+@media screen and (max-width: 480px){
+    #quiz_header h2{
+        font-size: 17px
+    }
+    .timer p{
+        font-size:15px
+    }
+    #qusetions h3{
+        font-size: 14px
+    }
+    label{
+        font-size: 12px
+    }
+    .nextbtn{
+        font-size: 15px;
+        padding: 7px 0
+    }
+}
+
+@media screen and (max-width: 320px){
+    #quiz_header h2{
+        font-size: 15px
+    }
+    .timer p{
+        font-size:12px
+    }
+    #qusetions h3{
+        font-size: 12px
+    }
+    label{
+        font-size: 10px
+    }
+
+}
